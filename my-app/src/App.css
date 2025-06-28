@@ -1,0 +1,18 @@
+.homediv{
+    background: red;
+    text-decoration: none;
+    width: 200px;
+    height: 200px;
+}
+
+.L{
+    text-decoration: none;
+    color: black;
+}
+
+.home{
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
