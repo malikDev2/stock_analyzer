@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return(<>
-    <h1>hello</h1>
-      <h2>Stock project</h2>
+    <h1>Tech Stock Trends Analysis</h1>
+      
       <div className="home">
       <Link to="/timeline" className="L">
         <div className="homediv">
@@ -12,26 +12,21 @@ const Home = () => {
         </div>
       </Link>
       <Link to="/presidencies" className="L">
-        <div className="homediv">
+        <div className="homediv" style={{ backgroundColor: 'rgba(60, 122, 255, 0.99)' }}>
           <h1>Presidencies</h1>
           
         </div>
       </Link>
       <Link to="/trends" className="L">
-        <div className="homediv" style={{ backgroundColor: 'rgba(0, 149, 255, 0.23)' }} >
+        <div className="homediv" style={{ backgroundColor: 'rgba(180, 0, 197, 0.79)' }} >
           <h1>Trends</h1>
           
         </div>
       </Link>
       </div>
       
-        <h3>yo</h3>
       
-      <div>
-        <button>Tech market cap timeline</button>
-        <button>Presidencies</button>
-        <button>tech trends</button>
-      </div>
+      
     
     
     

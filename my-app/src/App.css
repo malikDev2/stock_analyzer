@@ -1,8 +1,23 @@
 .homediv{
-    background: red;
+    background: rgb(253, 95, 95);
     text-decoration: none;
     width: 200px;
     height: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+
+h1{  
+    justify-self: center;
+}
+
+.homediv:hover{
+    padding: 20px;
+    transition: 1s;
 }
 
 .L{
@@ -16,3 +31,4 @@
     gap: 20px;
     justify-content: center;
 }
+
