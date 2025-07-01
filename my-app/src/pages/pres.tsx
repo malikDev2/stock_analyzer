@@ -1,5 +1,9 @@
+import CI from "./chartdiv.tsx";
+
 const Pres = () => {
     return(<>
+    
+    
     </>)
 
 }
