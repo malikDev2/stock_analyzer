@@ -65,7 +65,7 @@ h1{
 }
 
 .arrow-button:hover{
-    background: rgba(255, 0, 0, 0.773);
+    background: rgba(243, 255, 7, 0.773);
     transition: 0.5s;
     border-radius: 16px;
     width: 32px;
