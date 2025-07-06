@@ -3,6 +3,7 @@ import CI from "./chartdiv.tsx";
 import mcfive from "../assets/mcfive.png";
 import mcten from "../assets/mcten.png";
 import mctwo from "../assets/mctwo.png";
+import mcthirty from "../assets/mcthirty.png";
 
 const Time = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,19 +18,28 @@ const Time = () => {
       pageBackgroundColor: "rgb(60, 0, 255)",
     },
     {
-      header: "5 year view",
+      header: "5 Year View",
       imageSrc: mcfive,
       caption: "...",
       backgroundColor: "rgb(255, 96, 96)",
       pageBackgroundColor: "rgb(255, 0, 0)",
     },
     {
-      header: "10 year view",
+      header: "10 Year View",
       imageSrc: mcten,
       caption: "...",
       backgroundColor: "rgb(102, 255, 46)",
       pageBackgroundColor: "rgb(0, 255, 17)",
     },
+    {
+      header: "30 Year View",
+      imageSrc: mcthirty,
+      caption: "...",
+      backgroundColor: "rgb(232, 129, 255)",
+      pageBackgroundColor: "rgb(147, 4, 179)",
+    },
+    
+
   ];
 
   useEffect(() => {

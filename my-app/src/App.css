@@ -11,6 +11,11 @@
     transition: 1s;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 h1{  
     justify-self: center;
 }
@@ -43,6 +48,30 @@ h1{
 }
 
 .imgimg{
-    width: 850px;
+    width: 810px;
+    height: 510px;
+    min-height: 550px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}
+
+.arrow-button{
+    border-radius: 13px;
+    width: 26px;
+    height: 26px;
+    border: none;
+    transition: 0.5s;
+}
+
+.arrow-button:hover{
+    background: rgba(255, 0, 0, 0.773);
+    transition: 0.5s;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+    
+    cursor: pointer;
+
 }
 
