@@ -15,6 +15,7 @@ import valo from "../assets/valo.png";
 import valbu from "../assets/valbu.png";
 import valbu2 from "../assets/valbu2.png";
 import valc from "../assets/valc.png";
+import { Link } from "react-router-dom";
 
 
 const Pres = () => {
@@ -180,6 +181,9 @@ const Pres = () => {
           →
         </button>
       </div>
+      <Link to="/" className="L">
+        <button className="back">Back</button>
+      </Link>
     </div>
   );
 };

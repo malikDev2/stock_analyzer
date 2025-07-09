@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import CI from "./chartdiv.tsx";
 import mcfive from "../assets/mcfive.png";
 import mcten from "../assets/mcten.png";
@@ -64,6 +65,9 @@ const Time = () => {
         <CI {...cards[currentIndex]} />
         <button onClick={handleNext} className="arrow-button">→</button>
       </div>
+      <Link to="/" className="L">
+        <button className="back">Back</button>
+      </Link>
     </div>
   );
 };
