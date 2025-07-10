@@ -97,3 +97,9 @@ h1{
     text-decoration: none;
 }
 
+.homediv img{
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    align-self: center;
+}
