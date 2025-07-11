@@ -143,7 +143,7 @@ const Trends = () => {
       <h1 style={{ textAlign: "center", marginBottom: "1rem", color: "#333" }}>
          
       </h1>
-      <div
+      <div className="stockpage"
         style={{
           display: "flex",
           justifyContent: "center",

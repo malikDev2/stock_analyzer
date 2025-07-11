@@ -1,38 +1,81 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import time from "../assets/time.png";
 import trend from "../assets/trend.png";
 import pres from "../assets/pres.png";
 
 const Home = () => {
-    return(<>
-    <h1>Tech Stock Trends Analysis</h1>
-      
+  const navigate = useNavigate();
+
+  const [selected, setSelected] = useState<string | null>(null);
+  const [bgColor, setBgColor] = useState<string>("white");
+
+  const divConfigs = [
+    {
+      id: "timeline",
+      col: "rgba(30, 255, 0, 1)",
+      title: "Timeline",
+      img: time,
+      route: "/timeline",
+      bg: "#d3ffbeff",
+      description: "Explore the historical market cap growth of major tech companies."
+    },
+    {
+      id: "presidencies",
+      col:"rgba(71, 169, 255, 1)",
+      title: "Presidencies",
+      img: pres,
+      route: "/presidencies",
+      bg: "#cac4ffff",
+      description: "View the performance of tech companies throughout the recent presidencies."
+    },
+    {
+      id: "trends",
+      col: "rgba(255, 62, 62, 1)",
+      title: "Trends",
+      img: trend,
+      route: "/trends",
+      bg: "#ffc8c8ff",
+      description: "Visualize trends in tech and how they impacted various corporations."
+    }
+  ];
+
+  const handleClick = (id: string, route: string, bg: string) => {
+    if (selected === id) {
+      navigate(route); 
+    } else {
+      setSelected(id); 
+      setBgColor(bg); 
+    }
+  };
+
+  return (
+    <div style={{ backgroundColor: bgColor, minHeight: "100vh", padding: "2rem" }}>
+      <h1>Tech Stock Trends Analysis</h1>
+
+      {selected && (
+        <p style={{ marginTop: "2rem", fontSize: "1.2rem", justifySelf: "center" }}>
+          {divConfigs.find((div) => div.id === selected)?.description}
+        </p>
+      )}
+
       <div className="home">
-      <Link to="/timeline" className="L">
-        <div className="homediv">
-          <h1>Timeline</h1>
-          <img src={time} alt="timeline" />
-          <p>View the growth in market cap of Tech companies over the years</p>
-          
-        </div>
-      </Link>
-      <Link to="/presidencies" className="L">
-        <div className="homediv" style={{ backgroundColor: 'rgba(60, 122, 255, 0.99)' }}>
-          <h1>Presidencies</h1>
-          <img src={pres} alt="presidents" />
-        </div>
-      </Link>
-      <Link to="/trends" className="L">
-        <div className="homediv" style={{ backgroundColor: 'rgba(180, 0, 197, 0.79)' }} >
-          <h1>Trends</h1>
-          <img src={trend} alt="trends" />
-          
-        </div>
-      </Link>
+        {divConfigs.map(({ id, title, img, route, bg, col }) => (
+          <div
+            key={id}
+            className="homediv"
+            style={{ cursor: "pointer", marginBottom: "1rem", background: col }}
+            onClick={() => handleClick(id, route, bg)}
+          >
+            <h1>{title}</h1>
+            <img src={img} alt={title.toLowerCase()} />
+          </div>
+        ))}
       </div>
 
-    </>)
-
-}
+      
+    </div>
+  );
+};
 
 export default Home;

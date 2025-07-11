@@ -35,6 +35,7 @@ h1{
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .imgdiv{
@@ -102,4 +103,16 @@ h1{
     height: 150px;
     justify-self: center;
     align-self: center;
+}
+
+@media (max-width: 800px){
+    .stockpage{
+        width: 100%;
+        justify-self: center;
+    }
+
+    .stockpage img{
+        width: 90%;
+
+    }
 }

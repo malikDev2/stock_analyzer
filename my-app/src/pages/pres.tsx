@@ -154,7 +154,7 @@ const Pres = () => {
   };
 
   return (
-    <div
+    <div 
       style={{
         backgroundColor: pageBackground,
         minHeight: "100vh",
@@ -165,7 +165,7 @@ const Pres = () => {
       <h1 style={{ textAlign: "center", marginBottom: "1rem", color: "#333" }}>
         Stock Timeline
       </h1>
-      <div
+      <div className="stockpage"
         style={{
           display: "flex",
           justifyContent: "center",
