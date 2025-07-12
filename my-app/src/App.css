@@ -40,8 +40,14 @@ h1{
 
 .imgdiv{
     width: 1100px;
-    height: 650px;
+    height: auto;
+    min-height: 600px;
+
+
+    max-height: 800px;
+    padding: 10px;
     transition: 1s;
+    text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -50,9 +56,8 @@ h1{
 
 .imgimg{
     width: 810px;
-    height: 510px;
-    min-height: 550px;
-    padding: 20px;
+    height: 480px;
+    min-height: 410px;
     padding-top: 5px;
     padding-bottom: 5px; 
 }
@@ -63,6 +68,13 @@ h1{
     height: 26px;
     border: none;
     transition: 0.5s;
+}
+
+.capdiv{
+    background: rgba(255, 255, 255, 0.585);
+    padding: 2px;
+    margin: 1px;
+    border-radius: 10px;
 }
 
 .arrow-button:hover{

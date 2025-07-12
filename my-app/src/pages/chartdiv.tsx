@@ -16,7 +16,9 @@ export const CI: React.FC<CaptionedImage> = ({
     <div className="imgdiv" style={{ backgroundColor }}>
       <h2>{header}</h2>
       <img src={imageSrc} alt={header} className="imgimg"/>
-      <p>{caption}</p>
+      <div className="capdiv">
+        <p>{caption}</p>
+      </div>
     </div>
   );
 };
