@@ -60,10 +60,12 @@ const Time = () => {
       <h1 style={{ textAlign: "center", marginBottom: "1rem", color: "#333" }}>
         Stock Timeline
       </h1>
-      <div className="stockpage" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "2rem" }}>
-        <button onClick={handlePrev} className="arrow-button">←</button>
+      <div className="stockpage" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "2rem", flexDirection: 'column' }}>
         <CI {...cards[currentIndex]} />
-        <button onClick={handleNext} className="arrow-button">→</button>
+        <div className="arrow">
+          <button onClick={handlePrev} className="arrow-button">←</button>
+          <button onClick={handleNext} className="arrow-button">→</button>
+        </div>
       </div>
       <Link to="/" className="L">
         <button className="back">Back</button>
