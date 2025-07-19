@@ -57,9 +57,6 @@ const Time = () => {
 
   return (
     <div style={{ backgroundColor: pageBackground, minHeight: "100vh", padding: "2rem" , transition:'1s'}}>
-      <h1 style={{ textAlign: "center", marginBottom: "1rem", color: "#333" }}>
-        Stock Timeline
-      </h1>
       <div className="stockpage" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "2rem", flexDirection: 'column' }}>
         <CI {...cards[currentIndex]} />
         <div className="arrow">
