@@ -60,7 +60,7 @@ h1{
 .imgimg{
     width: 810px;
     height: 480px;
-    min-height: 410px;
+    min-height: 480px;
     padding-top: 5px;
     padding-bottom: 5px; 
 }
@@ -141,7 +141,18 @@ h1{
     
     .arrow {
         position: absolute;
-        bottom: 50px; 
+        top: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow2 {
+        position: absolute;
+        top: 670px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -155,7 +166,7 @@ h1{
     }
 
     .capdiv{
-        margin-top: 40px;
+        margin-top: 60px;
     }
 }
 

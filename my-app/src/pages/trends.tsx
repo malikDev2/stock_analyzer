@@ -153,7 +153,7 @@ const Trends = () => {
       </h1>
       <div className="stockpage" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "2rem", flexDirection: 'column' }}>
               <CI {...cards[currentIndex]} />
-              <div className="arrow">
+              <div className="arrow2">
                 <button onClick={handlePrev} className="arrow-button">←</button>
                 <button onClick={handleNext} className="arrow-button">→</button>
               </div>
