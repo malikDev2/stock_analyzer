@@ -130,17 +130,17 @@ h1{
     .imgdiv {
         width: 90%;
         justify-self: center;
-        position: relative; /* so .arrow positions inside this */
+        position: relative; 
     }
 
     .stockpage img {
         width: 90%;
     }
 
-    /* Position the arrow buttons inside the chart container */
+    
     .arrow {
         position: absolute;
-        bottom: 100px; /* adjust until it's visually between img & caption */
+        bottom: 100px; 
         left: 50%;
         transform: translateX(-50%);
         display: flex;
