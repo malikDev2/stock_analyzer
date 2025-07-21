@@ -69,8 +69,9 @@ h1{
     border-radius: 13px;
     width: 26px;
     height: 26px;
-    border: none;
     transition: 0.5s;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.088);
 }
 
 .capdiv{
@@ -140,7 +141,7 @@ h1{
     
     .arrow {
         position: absolute;
-        bottom: 100px; 
+        bottom: 50px; 
         left: 50%;
         transform: translateX(-50%);
         display: flex;
